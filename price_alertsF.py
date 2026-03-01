@@ -317,8 +317,7 @@ async def cmd_start(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
             "Commands:\n"
             "• /info — show your alerts\n"
             "• /add BTC 65000 — add alert fast\n"
-            "• /addw — add alert wizard\n"
-            "• /remove — remove alert (wizard) or /remove <id>\n"
+            "• /remove — /remove <id>\n"
         )
         await update.message.reply_text(msg)
         logger.info(f"/start user={user_id}")
